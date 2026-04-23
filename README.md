@@ -1,41 +1,74 @@
 # 📊 Customer Churn Prediction
 
-This project predicts whether a customer will churn using Machine Learning.
+A Machine Learning project to predict customer churn using advanced feature engineering and ensemble models.
 
-## 🚀 Features
+---
 
-* Data Cleaning & Preprocessing
-* Feature Engineering
-* XGBoost Model
-* Model Evaluation
+## 🚀 Project Overview
+
+This project analyzes customer data and predicts whether a customer will leave the service (churn).
+
+---
 
 ## 📁 Dataset
 
-Telco Customer Churn Dataset
+* Telco Customer Churn Dataset
+* 7,000+ customers
+* Includes demographics, services, and billing data
+
+---
+
+## 🧹 Data Preprocessing
+
+* Handled missing values
+* Fixed `TotalCharges` data type
+* Feature engineering (AvgCharges, Charge_Error, etc.)
+* Encoding categorical variables
+
+---
 
 ## 🧠 Model
 
 * XGBoost Classifier
-* Accuracy: ~85%
+* Tuned hyperparameters
+* Cross-validation used
 
-## 🔥 Key Features
+---
 
-* tenure
-* MonthlyCharges
-* AvgCharges
-* Contract type
+## 📈 Results
+
+* Accuracy: **85%+**
+* Key features:
+
+  * tenure
+  * MonthlyCharges
+  * Contract type
+  * AvgCharges
+
+---
 
 ## ▶️ How to Run
 
 ```bash
 pip install -r requirements.txt
-python src/model.py
 ```
 
-## 📈 Results
+Open the notebook:
 
-The model achieves strong performance using engineered features and boosting algorithms.
+```bash
+jupyter notebook task4.ipynb
+```
 
 ---
 
-👨‍💻 Developed by [Mazen Maher]
+## 📊 Future Improvements
+
+* Stacking models
+* Hyperparameter tuning
+* Deployment (Flask / Streamlit)
+
+---
+
+## 👨‍💻 Author
+
+Mazen Maher
